@@ -2,6 +2,14 @@
 	font-family:Arial,Helvetica,sans-serif;
 }
 
+a{
+	text-decoration:none;
+}
+
+abbr{
+	text-decoration:none;
+}
+
 body{
 	background-color:#A0A0D0;
 }
@@ -11,33 +19,25 @@ footer{
 	margin-left:calc(5% + 15px);
 }
 
-noscript{
-	color:#FF0000;
-}
-
-a{
-	text-decoration:none;
-}
-
-p{
-	font-size:120%;
-	text-align:left;
-}
-
-abbr{
-	text-decoration:none;
+footer img{
+	border-radius:initial;
 }
 
 img{
 	border-radius:10px;
 }
 
-footer img{
-	border-radius:initial;
+noscript{
+	color:#FF0000;
 }
 
 object{
 	pointer-events:none;
+}
+
+p{
+	font-size:120%;
+	text-align:left;
 }
 
 .external{
@@ -99,6 +99,18 @@ object{
 	animation-duration:0.3s;
 	animation-iteration-count:1;
   animation-fill-mode:forwards;
+	-moz-animation-name:focus;
+	-moz-animation-duration:0.3s;
+	-moz-animation-iteration-count:1;
+  -moz-animation-fill-mode:forwards;
+	-o-animation-name:focus;
+	-o-animation-duration:0.3s;
+	-o-animation-iteration-count:1;
+  -o-animation-fill-mode:forwards;
+	-webkit-animation-name:focus;
+	-webkit-animation-duration:0.3s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-fill-mode:forwards;
 }
 
 .gameLinkSmall{
@@ -148,12 +160,30 @@ object{
 	animation-name:fullRotationRight;
 	animation-duration:1s;
 	animation-iteration-count:1;
+	-moz-animation-name:fullRotationRight;
+	-moz-animation-duration:1s;
+	-moz-animation-iteration-count:1;
+	-o-animation-name:fullRotationRight;
+	-o-animation-duration:1s;
+	-o-animation-iteration-count:1;
+	-webkit-animation-name:fullRotationRight;
+	-webkit-animation-duration:1s;
+	-webkit-animation-iteration-count:1;
 }
 
 #logo:hover{
 	animation-name:fullRotationLeft;
 	animation-duration:1s;
 	animation-iteration-count:1;
+	-moz-animation-name:fullRotationLeft;
+	-moz-animation-duration:1s;
+	-moz-animation-iteration-count:1;
+	-o-animation-name:fullRotationLeft;
+	-o-animation-duration:1s;
+	-o-animation-iteration-count:1;
+	-webkit-animation-name:fullRotationLeft;
+	-webkit-animation-duration:1s;
+	-webkit-animation-iteration-count:1;
 }
 
 #heading h1{
@@ -198,16 +228,21 @@ object{
 }
 
 @keyframes fullRotationRight{
-	100%{
-		transform:rotate(360deg);
-	}
+	100%{transform:rotate(360deg);}
 }
 
+/*Chrome 4.0 - 43.0,Safari 4.0 - 9.0,Opera 15.0 - 30.0*/
+@-webkit-keyframes fullRotationRight{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}}
+@-moz-keyframes fullRotationRight{100%{-moz-transform:rotate(360deg);}}/*Firefox 5.0 - 16.0*/
+@-o-keyframes fullRotationRight{100%{-o-transform:rotate(360deg);}}/*Opera 12.0 - 15.0*/
+
 @keyframes fullRotationLeft{
-	100%{
-		transform:rotate(-360deg);
-	}
+	100%{transform:rotate(-360deg);}
 }
+
+@-webkit-keyframes fullRotationLeft{100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);}}
+@-moz-keyframes fullRotationLeft{100%{-moz-transform:rotate(-360deg);}}
+@-o-keyframes fullRotationLeft{100%{-o-transform:rotate(-360deg);}}
 
 @keyframes focus{
 	100%{
@@ -215,3 +250,7 @@ object{
 		padding-bottom:20px;
 	}
 }
+
+@-webkit-keyframes focus{100%{margin-bottom:0px;padding-bottom:20px;}}
+@-moz-keyframes focus{100%{margin-bottom:0px;padding-bottom:20px;}}
+@-o-keyframes focus{100%{margin-bottom:0px;padding-bottom:20px;}}
