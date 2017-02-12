@@ -6,10 +6,6 @@ a{
 	text-decoration:none;
 }
 
-abbr{
-	text-decoration:none;
-}
-
 body{
 	background-color:#A0A0D0;
 }
@@ -242,31 +238,44 @@ p{
 #nav li a:hover{
 	background-color:#111;
 }
-
-@keyframes fullRotationRight{
-	100%{transform:rotate(360deg);}
+/*keyframes
+-webkit- Chrome 4.0 - 43.0,Safari 4.0 - 9.0,Opera 15.0 - 30.0
+-moz- Firefox 5.0 - 16.0
+-o- Opera 12.0 - 15.0
+*/
+@keyframes fullRotationRight,
+@-webkit-keyframes fullRotationRight,
+@-moz-keyframes fullRotationRight,
+@-o-keyframes fullRotationRight
+{
+	100%{
+		transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+	}
 }
 
-/*Chrome 4.0 - 43.0,Safari 4.0 - 9.0,Opera 15.0 - 30.0*/
-@-webkit-keyframes fullRotationRight{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}}
-@-moz-keyframes fullRotationRight{100%{-moz-transform:rotate(360deg);}}/*Firefox 5.0 - 16.0*/
-@-o-keyframes fullRotationRight{100%{-o-transform:rotate(360deg);}}/*Opera 12.0 - 15.0*/
-
-@keyframes fullRotationLeft{
-	100%{transform:rotate(-360deg);}
+@keyframes fullRotationLeft,
+@-webkit-keyframes fullRotationLeft,
+@-moz-keyframes fullRotationLeft,
+@-o-keyframes fullRotationLeft
+{
+	100%{
+		transform:rotate(-360deg);
+		-moz-transform:rotate(-360deg);
+		-webkit-transform:rotate(-360deg);
+		-o-transform:rotate(-360deg);
+	}
 }
 
-@-webkit-keyframes fullRotationLeft{100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);}}
-@-moz-keyframes fullRotationLeft{100%{-moz-transform:rotate(-360deg);}}
-@-o-keyframes fullRotationLeft{100%{-o-transform:rotate(-360deg);}}
-
-@keyframes focus{
+@keyframes focus,
+@-webkit-keyframes focus,
+@-moz-keyframes focus,
+@-o-keyframes focus
+{
 	100%{
 		margin-bottom:0px;
 		padding-bottom:20px;
 	}
 }
-
-@-webkit-keyframes focus{100%{margin-bottom:0px;padding-bottom:20px;}}
-@-moz-keyframes focus{100%{margin-bottom:0px;padding-bottom:20px;}}
-@-o-keyframes focus{100%{margin-bottom:0px;padding-bottom:20px;}}
