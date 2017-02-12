@@ -36,6 +36,10 @@ footer img{
 	border-radius:initial;
 }
 
+object{
+	pointer-events:none;
+}
+
 .external{
 	text-decoration:initial;
 }
