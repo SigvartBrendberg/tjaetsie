@@ -1,0 +1,213 @@
+*{
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+	background-color:#A0A0D0;
+}
+
+footer{
+	padding:5px;
+	margin-left:calc(5% + 15px);
+}
+
+noscript{
+	color:#FF0000;
+}
+
+a{
+	text-decoration:none;
+}
+
+p{
+	font-size:120%;
+	text-align:left;
+}
+
+abbr{
+	text-decoration:none;
+}
+
+img{
+	border-radius:10px;
+}
+
+footer img{
+	border-radius:initial;
+}
+
+.external{
+	text-decoration:initial;
+}
+
+.gameLink{
+	display:inline-block;
+	border-style:solid;
+	border-width:1px;
+	border-color:#A0A0A0;
+	border-radius:15px 0px;
+	margin:1px;
+	margin-top:10px;
+	margin-bottom:22px;
+	background-color:#E5E5E5;
+	box-shadow:1px 1px 3px #909090;
+	min-width:80px;
+	min-height:60px;
+}
+
+.gameLink > a{
+	display:block;
+	height:100%;
+	font-size:120%;
+	color:black;
+	padding-bottom:5px;
+}
+
+.gameLink a div {
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	margin-left:2px;
+	margin-right:2px;
+}
+.gameLink a div span {
+	display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
+	line-height:15px;
+}
+
+.gameLink object{
+	border-radius:13px 0px;
+	margin:0px;
+}
+
+.gameLink:hover{
+	border-color:#00D000;
+	background-color:#F0F0F0;
+	border-width:2px;
+	box-shadow:0px 0px 2px #B0B0B0;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:9px;
+	margin-bottom:21px;
+	animation-name:focus;
+	animation-duration:0.3s;
+	animation-iteration-count:1;
+  animation-fill-mode:forwards;
+}
+
+.gameLinkSmall{
+	width:80px;
+}
+
+.gameLinkSmall a div span{
+	max-width:80px;
+}
+
+#content{
+	margin-left:calc(5% + 15px);
+	margin-right:calc(5% + 15px);
+	text-align:center;
+}
+
+#intro{
+	display:inline-block;
+}
+
+#gridLayout{
+	display:inline-block;
+	margin-bottom:25px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#A0A0A0;
+	border-radius:15px;
+	padding:20px;
+}
+
+#wrapper{
+	background-color:#F6F6F0;
+	border-radius:10px;
+	box-shadow:5px 5px 4px #303030;
+	margin-left:calc(5% + 2px);
+	margin-right:calc(5% + 2px);
+}
+
+#heading{
+	text-align:center;
+}
+
+#logo{
+  position:absolute;
+	left:calc(5% + 20px);
+	margin:5px;
+	animation-name:fullRotationRight;
+	animation-duration:1s;
+	animation-iteration-count:1;
+}
+
+#logo:hover{
+	animation-name:fullRotationLeft;
+	animation-duration:1s;
+	animation-iteration-count:1;
+}
+
+#heading h1{
+	display:inline-block;
+	font-size:260%;
+	font-family:"Century Gothic","Avant Garde Gothic","Avant Garde","URW Gothic L",helvetica,sans-serif;
+}
+
+#heading h1:hover{
+	animation-name:fullRotationRight;
+	animation-duration:1s;
+	animation-iteration-count:1;
+}
+
+#nav{
+	background-color:#333;
+}
+
+#nav ul{
+	list-style-type:none;
+	margin:0;
+	padding-left:5%;
+	overflow:hidden;
+}
+
+#nav li{
+	float:left;
+}
+
+#nav li a{
+	display:block;
+	color:white;
+	text-align:center;
+	padding:12px 16px;
+	font-size:150%;
+	text-decoration:none;
+	font-family:"Century Gothic","Avant Garde Gothic","Avant Garde","URW Gothic L",helvetica,sans-serif;
+}
+
+#nav li a:hover{
+	background-color:#111;
+}
+
+@keyframes fullRotationRight{
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+@keyframes fullRotationLeft{
+	100%{
+		transform:rotate(-360deg);
+	}
+}
+
+@keyframes focus{
+	100%{
+		margin-bottom:0px;
+		padding-bottom:20px;
+	}
+}
