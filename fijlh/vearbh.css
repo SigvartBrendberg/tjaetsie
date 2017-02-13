@@ -1,12 +1,12 @@
 #vearbh{
-	text-align:center;
+	text-align:left;
 }
 
 #vearbh table{
 	text-align:center;
 }
 
-#vearbh .clickCell td{
+.clickCell td{
 	cursor:pointer;
 	text-align:center;
 	font-size:300%;
@@ -25,7 +25,7 @@
 	width:100px;
 }
 
-#vearbh .clickCell td:hover{
+.clickCell td:hover{
 	background-color:#80FF80;
 	border-color:#00F000;
 	-moz-box-shadow:none;
@@ -33,6 +33,6 @@
 	box-shadow:none;
 }
 
-#vearbh #golme{
+#gyhtjelasse{
 	font-size:200%;
 }
