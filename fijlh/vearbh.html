@@ -7,7 +7,7 @@
 	<title>Tjaetsie | Vearbh</title>
 	<link rel="icon" type="image/png" href="../guvvieh/icon16.png" sizes="16x16">
 	<link rel="icon" type="image/png" href="../guvvieh/icon32.png" sizes="32x32">
-	<link rel="icon" href="../guvvieh/icon.svg"><!--manne firefox eahtsam-->
+	<link rel="icon" type="image/svg+xml" href="../guvvieh/icon.svg"><!--manne firefox eahtsam-->
 	<link rel="stylesheet" type="text/css" href="normalize.sig.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="vearbh.css">
@@ -54,20 +54,25 @@
 		<div id="vearbh">
 			<h2>Vearb-dåehkie</h2>
 			<button onclick="aelkedh()">Aelkedh!</button><br>
-			<span id="gyhtjelasse">&nbsp;</span>
 			<table>
 				<tbody>
-					<tr class="clickCell">
+					<tr>
+						<td colspan="3">
+							<span id="gyhtjelasse"></span>
+							<span id="poeng">0</span>
+						</td>
+					</tr>
+					<tr class="clickCell noselect">
 						<td onclick="vearbhClick(1)" id="1">I</td>
 						<td onclick="vearbhClick(2)" id="2">II</td>
 						<td onclick="vearbhClick(3)" id="3">III</td>
 					</tr>
-					<tr class="clickCell">
+					<tr class="clickCell noselect">
 						<td onclick="vearbhClick(4)" id="4">IV</td>
 						<td onclick="vearbhClick(5)" id="5">V</td>
 						<td onclick="vearbhClick(6)" id="6">VI</td>
 					</tr>
-					<tr class="clickCell">
+					<tr class="clickCell noselect">
 						<td colspan="3" style="font-size:200%;" id="0" onclick="vearbhClick(0)">Golme-lihtsh</td>
 					</tr>
 				</tbody>

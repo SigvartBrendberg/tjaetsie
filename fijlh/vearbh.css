@@ -9,7 +9,7 @@
 .clickCell td{
 	cursor:pointer;
 	text-align:center;
-	font-size:300%;
+	font-size:350%;
 	background-color:#8080FF;
 	border-style:solid;
 	border-width:1px;
@@ -22,7 +22,7 @@
 	-webkit-box-shadow:1px 1px 3px #909090;
 	box-shadow:1px 1px 3px #909090;
 	font-family:serif;
-	width:100px;
+	width:125px;
 }
 
 .clickCell td:hover{
@@ -35,4 +35,11 @@
 
 #gyhtjelasse{
 	font-size:200%;
+}
+
+#poeng{
+	float:right;
+	font-size:400%;
+	text-align:right;
+	color:#00F000;
 }
