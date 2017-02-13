@@ -1,0 +1,29 @@
+#vearbh{
+	text-align:center;
+}
+
+#vearbh table{
+	text-align:center;
+}
+
+#vearbh .clickCell td{
+	text-align:center;
+	font-size:300%;
+	background-color:#8080FF;
+	border-style:solid;
+	border-width:1px;
+	border-color:#A0A0A0;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	padding:5px;
+	box-shadow:1px 1px 3px #909090;
+	-moz-box-shadow:1px 1px 3px #909090;
+	-webkit-box-shadow:1px 1px 3px #909090;
+	font-family:serif;
+	width:100px;
+}
+
+#vearbh #golme{
+	font-size:200%;
+}

@@ -13,6 +13,7 @@ body{
 footer{
 	padding:5px;
 	margin-left:calc(5% + 15px);
+	margin-top:20px;
 }
 
 footer img{
@@ -135,6 +136,10 @@ p{
 	text-align:center;
 }
 
+#content ul{
+	text-align:left;
+}
+
 #intro{
 	display:inline-block;
 }
@@ -237,6 +242,23 @@ p{
 
 #nav li a:hover{
 	background-color:#111;
+}
+
+#nav li.dropdown{
+	display:inline-block;
+}
+
+#nav .dropdown-content {
+	display:none;
+	position:absolute;
+}
+
+#nav .dropdown:hover .dropdown-content{
+	display:block;
+}
+
+#nav .dropdown-content a{
+	background-color:#333;
 }
 
 @keyframes fullRotationRight{

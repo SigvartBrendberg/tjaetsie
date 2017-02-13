@@ -4,13 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="description" content="Åarjel saemien giele gaskeviermesne|klaerieh">
 	<meta name="author" content="Sigvart Brendberg">
-	<title>Tjaetsie | Bijre</title>
+	<title>Tjaetsie | Vearbh</title>
 	<link rel="icon" type="image/png" href="../guvvieh/icon16.png" sizes="16x16">
 	<link rel="icon" type="image/png" href="../guvvieh/icon32.png" sizes="32x32">
 	<link rel="icon" href="../guvvieh/icon.svg"><!--manne firefox eahtsam-->
 	<link rel="stylesheet" type="text/css" href="normalize.sig.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="vearbh.css">
 	<script async src="main.js"></script>
+	<script async src="vearbh.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -19,7 +21,8 @@
 			<a href="../index.html">
 				<img id="logo" src="../guvvieh/icon.svg" alt="">
 			</a>
-			<h1>Bijre</h1><!--spesi-->
+			<h1>Vearbh</h1>
+			<img src="../guvvieh/vearbh.svg" height="40" width="40" alt="" style="margin-bottom:-5px;">
 		</div>
 		<div id="nav">
 			<div>
@@ -48,10 +51,25 @@
 		</div><br>
 	</div><!--end tops-->
 	<div id="content">
-		<p>
-Daate lea prosjekte "tjaetsie".<br>
-Dov lea sijjie gaskeviermesne gusnie "tjaetsie" maahta årrodh?
-		</p>
+		<div id="vearbh">
+			<table>
+				<tbody>
+					<tr class="clickCell">
+						<td onclick="vearbhClick(1)">I</td>
+						<td onclick="vearbhClick(2)">II</td>
+						<td onclick="vearbhClick(3)">III</td>
+					</tr>
+					<tr class="clickCell">
+						<td onclick="vearbhClick(4)">IV</td>
+						<td onclick="vearbhClick(5)">V</td>
+						<td onclick="vearbhClick(6)">VI</td>
+					</tr>
+					<tr class="clickCell"><!--fix later-->
+						<td colspan="3" id="golme">Golme-lihtsh</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div><!--end content-->
 	<footer>
 		<a href="https://www.w3.org/html/">
