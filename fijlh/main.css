@@ -145,6 +145,8 @@ p{
 	margin-left:calc(5% + 15px);
 	margin-right:calc(5% + 15px);
 	text-align:center;
+	min-height:200px;
+	margin-bottom:10px;
 }
 
 #content ul{
