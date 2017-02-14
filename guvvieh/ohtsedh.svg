@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="80" width="80">
+	<g font-family="monospace" font-size="10" fill="black" stroke="none">
+		<text x="8" y="15">G K W D G F</text>
+		<text x="8" y="26">A U C M E Y</text>
+		<text x="8" y="37">V Q S D L R</text>
+		<text x="8" y="48">A B T N E F</text>
+		<text x="8" y="59">N Z F D I F</text>
+		<text x="8" y="70">P A E D O E</text>
+	</g>
+	<path stroke="red" fill="none" stroke-width="1" d="M8 14L69 71A6 6 0 0 0 77 65Z"/>
+</svg>
