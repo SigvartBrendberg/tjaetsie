@@ -23,9 +23,9 @@ footer img{
 }
 
 img{
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
+	-moz-border-radius:15px 0px;
+	-webkit-border-radius:15px 0px;
+	border-radius:15px 0px;
 }
 
 noscript{

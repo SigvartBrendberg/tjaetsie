@@ -13,7 +13,7 @@ var orre = function(){
 	feil = [];
 	baak = liste[Math.floor(Math.random()*liste.length)];
 	teikn();
-	for(var i=0;i<23;i++){
+	for(var i=0;i<24;i++){
 		document.getElementById(i + "").className = "bokstav";
 	};
 };
