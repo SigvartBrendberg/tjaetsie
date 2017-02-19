@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Åarjel saemien giele gaskeviermesne|klaerieh">
+	<meta name="author" content="Sigvart Brendberg">
+	<title>Tjaetsie | Hangman</title>
+	<link rel="icon" type="image/png" href="../guvvieh/icon16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="../guvvieh/icon32.png" sizes="32x32">
+	<link rel="icon" href="../guvvieh/icon.svg"><!--manne firefox eahtsam-->
+	<link rel="stylesheet" type="text/css" href="normalize.sig.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script async src="main.js"></script>
+	<script async src="hangman.js"></script><!--spesi-->
+	<style>
+button{
+	font-size:200%;
+}
+#hangman{
+	margin-left:10%;
+	margin-right:10%;
+	text-align:left;
+}
+#alfabet{
+	width:450px;
+}
+#hang{
+	font-size:200%;
+	margin:10px;
+}
+.selectedBokstav{
+	font-size:250%;
+	display:inline-block;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	border-radius:5px;
+	padding:3px;
+	min-width:60px;
+	margin-bottom:2px;
+	background-color:#FFA0A0;
+}
+.riktigBokstav{
+	font-size:250%;
+	display:inline-block;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	border-radius:5px;
+	padding:3px;
+	min-width:60px;
+	margin-bottom:2px;
+	background-color:#A0FFA0;
+}
+.bokstav{
+	font-size:250%;
+	display:inline-block;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	border-radius:5px;
+	padding:3px;
+	min-width:60px;
+	margin-bottom:2px;
+	cursor:pointer;
+	background-color:initial;
+}
+.bokstav:hover{
+	background-color:#A0FFA0;
+}
+	</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="tops">
+		<div id="heading">
+			<a href="../index.html">
+				<img id="logo" src="../guvvieh/icon.svg" alt="">
+			</a>
+			<h1>Hangman</h1><!--spesi-->
+			<svg viewBox="0 0 80 60" height="40" width="40">	
+				<g stroke="none">
+					<circle cx="25" cy="25" r="12" fill="blue"/>
+					<circle cx="25" cy="55" r="12" fill="#FFEF00"/>
+					<circle cx="55" cy="25" r="12" fill="green"/>
+					<circle cx="55" cy="55" r="12" fill="red"/>
+				</g>
+			</svg>
+		</div>
+		<div id="nav">
+			<div>
+				<ul>
+					<li><a href="../index.html">Gierege</a></li>
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Spealh</a>
+						<div class="dropdown-content">
+							<a href="vearbh.html">Vearbh</a>
+							<a href="klaerieh.html">Klaerieh</a>
+							<a href="gaessie.html">Gåessie</a>
+						</div>
+					</li>
+					<li><a href="bijre.html">Bijre</a></li>
+					<li><a href="jeatja.html">Jeatja sæjroeh</a></li>
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Vielie aath</a>
+						<div class="dropdown-content">
+							<a href="guvvieh.html">Guvvieh</a>
+							<a href="#">Lorem</a>
+							<a href="#">Ipsum</a>
+						</div>
+					</li>
+				</ul>
+			</div><!--end nav-->
+		</div><br>
+	</div><!--end tops-->
+	<div id="content">
+		<div id="hangman">
+			<button onclick="orre()">Orre</button><br>
+			<span id="hang">&nbsp;</span><br><br>
+			<div id="alfabet" class="noselect">
+				<div id="0" onclick="sjekk(this)" class="bokstav">A</div>
+				<div id="1" onclick="sjekk(this)" class="bokstav">B</div>
+				<div id="2" onclick="sjekk(this)" class="bokstav">D</div>
+				<div id="3" onclick="sjekk(this)" class="bokstav">E</div>
+				<div id="4" onclick="sjekk(this)" class="bokstav">F</div>
+				<div id="5" onclick="sjekk(this)" class="bokstav">G</div>
+				<div id="6" onclick="sjekk(this)" class="bokstav">H</div>
+				<div id="7" onclick="sjekk(this)" class="bokstav">I</div>
+				<div id="8" onclick="sjekk(this)" class="bokstav">J</div>
+				<div id="9" onclick="sjekk(this)" class="bokstav">K</div>
+				<div id="10" onclick="sjekk(this)" class="bokstav">L</div>
+				<div id="11" onclick="sjekk(this)" class="bokstav">M</div>
+				<div id="12" onclick="sjekk(this)" class="bokstav">N</div>
+				<div id="13" onclick="sjekk(this)" class="bokstav">O</div>
+				<div id="14" onclick="sjekk(this)" class="bokstav">P</div>
+				<div id="15" onclick="sjekk(this)" class="bokstav">R</div>
+				<div id="16" onclick="sjekk(this)" class="bokstav">S</div>
+				<div id="17" onclick="sjekk(this)" class="bokstav">T</div>
+				<div id="18" onclick="sjekk(this)" class="bokstav">U</div>
+				<div id="19" onclick="sjekk(this)" class="bokstav">V</div>
+				<div id="20" onclick="sjekk(this)" class="bokstav">Y</div>
+				<div id="21" onclick="sjekk(this)" class="bokstav">Æ</div>
+				<div id="22" onclick="sjekk(this)" class="bokstav">Ø</div>
+				<div id="23" onclick="sjekk(this)" class="bokstav">Å</div>
+			</div>
+		</div>
+	</div><!--end content-->
+	<footer>
+		<a href="https://www.w3.org/html/">
+			<img src="../guvvieh/html5.svg" width="32" height="32" alt="">
+		</a>
+		<a href="https://www.w3.org/Graphics/SVG/">
+			<img src="../guvvieh/svglogo.svg" width="32" height="32" alt="">
+		</a>
+		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+			<img alt="Creative Commons" src="../guvvieh/CCLicence.png">
+		</a>
+		<br>
+		<span>Sigvart Brendberg</span>
+	</footer>
+</div><!--end wrapper-->
+</body>
+</html>
